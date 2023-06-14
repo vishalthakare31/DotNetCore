@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1>welcome</h1>
+        <h1>Welcome to Our Website</h1>
+        <p>This is demo project developed by Vishal Thakare </p>
+
+       
+
+       
+            @Html.ActionLink("Create Employee", "Create", "Employees", null, new { @class = "btn btn-primary" })
+
+            @Html.ActionLink("View Employee", "Index", "Employees", null, new { @class = "btn btn-primary" })
+
+            @Html.ActionLink("Create Admin", "Create", "Admins", null, new { @class = "btn btn-primary" })
+
+            @Html.ActionLink(" Admin login", "Login", "Admins", null, new { @class = "btn btn-primary" })
+
+            @Html.ActionLink(" Employee login", "Login", "Employees", null, new { @class = "btn btn-primary" })
+
+
+        
+    </div>
+</body>
+</html>
