@@ -1,0 +1,35 @@
+﻿@model Teacher
+
+
+<form method="post">
+    <input asp-for="Id" hidden />
+    <div class="row pb-2 ">
+        <h2 class="text-dark align-content-center">Delete Teacher</h2>
+
+    </div>
+     
+    <div class="mp-3 row p-1">
+        <lable asp-for="Name" class="p-0">Teacher Name</lable>
+        <input asp-for="Name" type="text" disabled class="form-control" />
+    </div>
+
+    <div class="mp-3 row p-1">
+        <lable asp-for="Subject" class="p-0">Subject</lable>
+        <input asp-for="Subject" type="text" disabled class="form-control" />
+    </div>
+
+    <div class="row">
+
+        <div class="col-6 col-md-3 ">
+            <button type="submit"class="btn btn-danger form-control ">Delete</button>
+        </div>
+        <div class="col-6 col-m-3">
+            <a asp-controller="Teacher" asp-action="Index" class="btn btn-outline-secondary form-control">Back To list</a>
+        </div>
+    </div>
+    
+    
+
+
+</form>
+
